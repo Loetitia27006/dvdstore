@@ -1,7 +1,6 @@
 package com.mycompany.dvdstore.controller;
 
 import com.mycompany.dvdstore.entity.Movie;
-import com.mycompany.dvdstore.service.MovieService;
 import com.mycompany.dvdstore.service.MovieServiceInterface;
 
 import java.util.Scanner;
@@ -21,8 +20,6 @@ public class MovieController {
         Movie movie = new Movie();
         movie.setTitle(title);
         movie.setGenre(genre);
-
-
         movieService.registerMovie(movie);
     }
 
